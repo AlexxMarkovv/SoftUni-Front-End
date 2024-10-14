@@ -1,0 +1,12 @@
+span.author{
+    font-weight: bold;
+}
+
+.text{
+font-size: medium;
+font-weight: 500;
+}
+
+.post-comments{
+    background-color: chocolate;
+}
