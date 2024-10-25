@@ -1,0 +1,30 @@
+div p {
+    font: italic;
+    font-weight: 500;
+    padding: 13px;
+}
+
+div {
+    margin-bottom: 20px;
+    max-width: 320px;
+}
+
+.solid {
+    border: 4px solid;
+}
+
+.dashed {
+    border: 3px dashed #333;
+}
+
+.dotted {
+    border: 2px dotted #666;
+}
+
+.mixed {
+    border-top: 3px dashed #333;
+    border-bottom: 3px dashed #333;
+    border-left: 4px solid #000;
+    border-right: 4px solid #000;
+}
+
