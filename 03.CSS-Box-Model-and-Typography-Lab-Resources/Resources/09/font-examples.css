@@ -1,0 +1,29 @@
+div {
+    border: 2px solid;
+    padding: 15px 10px;
+    margin: 10px;
+    font-size: 24px;
+    color: brown;
+}
+
+.font-family  {
+    font-family: 'Arial' sans-serif;
+}
+
+.font-size {
+    font-size: 24px;
+    color: rgb(10, 26, 40);
+}
+
+.font-weight {
+    font-weight: bold;
+}
+
+.font-style {
+    font-style: italic;
+}
+
+.font-variant {
+    font-variant: small-caps;
+}
+
