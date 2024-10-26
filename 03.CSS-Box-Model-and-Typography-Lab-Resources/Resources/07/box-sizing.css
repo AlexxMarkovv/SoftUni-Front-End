@@ -1,0 +1,16 @@
+div {
+    border: 5px solid #333;
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #dad7d7;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
