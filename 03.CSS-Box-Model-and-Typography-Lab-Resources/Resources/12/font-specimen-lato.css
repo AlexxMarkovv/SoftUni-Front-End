@@ -1,0 +1,103 @@
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    box-sizing: inherit;
+}
+
+p, ol, ul {
+    padding-bottom: 1.5rem;
+}
+
+ol, ul {
+    padding-left: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: Georgia sans-serif;
+}
+
+hr {
+    margin-top: 20px;
+    height: 2px;
+    border-width: 0;
+    color: rgb(223, 166, 21);
+    background-color: rgb(223, 166, 21);
+}
+
+ul.square-pointer{
+    list-style-type: square;
+}
+
+ul.full-circle-pointer{
+    list-style-type: disc;
+}
+
+ul.circle-pointer{
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+.destinations {
+    border-collapse: collapse;
+    border-color: #8987878c;
+    width: 100%;
+}
+
+.destinations, td{
+    border: 2px solid #8987878c;
+    padding: 8px;
+}
+
+.destinations, tr {
+    box-sizing: content-box;
+    flex: center;
+}
+
+.destinations tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.destinations tr:hover {
+    background-color: #ddd;
+}
+
+.destinations th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    text-align: left;
+    background-color: #8987878c;
+    color: black;
+}
+
+table {
+    table-layout: fixed;
+    font-weight: bold;
+}
+
+blockquote {
+    padding: 20px;
+    margin: 20px 25px;
+    border-left: 5px solid #ccc; /* Left border to indicate a quote */
+    background-color: #f9f9f9; /* Light background color */
+    font-style: italic; /* Italicize the text for a quote feel */
+    color: #555; /* Softer font color */
+}
+
+blockquote #author {
+    position: relative;
+    font-weight: bold;
+    padding-left: 95%;
+}
