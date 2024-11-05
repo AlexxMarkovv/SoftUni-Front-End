@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+.outer-box {
+    border: 2px solid green;
+    margin: auto;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.inner-box {
+    border: 2px solid blue;
+    width: 800px;
+    height: 280px;
+    text-align: center;
+    margin: auto;
+}
+
+.inside-boxes {
+    padding: 8px;
+    margin: 8px;
+}
+
+ul li {
+    border: 2px solid;
+    margin: 10px;
+    padding: 25px;
+    font-size: 15px;
+}
