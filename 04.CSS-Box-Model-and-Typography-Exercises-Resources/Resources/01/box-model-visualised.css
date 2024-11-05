@@ -1,0 +1,49 @@
+.css-box-model {
+    width: 50vw;
+    margin: 50px auto ;
+}
+
+.css-box-model div {
+    border: 1px dashed #787777;
+    margin: 0 20px 20px 20px;
+}
+
+.css-box-model div::before {
+    padding: 1px 8px 8px 8px;
+    font-size: 10px;
+    font-weight: 600;
+    display: block;
+}
+
+.content p {
+    text-align: center;
+}
+
+.css-box-model .margin {
+    background: hsl(16.25deg 100% 71.76%);
+}
+
+.css-box-model .margin::before {
+    content: 'margin';
+}
+
+.css-box-model .border {
+    background: hsl(35.79deg 100% 88.82%);
+}
+
+.css-box-model .border::before {
+    content: 'border';
+}
+
+.css-box-model .padding {
+    background: hsl(120deg 71.83% 72.16%);
+}
+
+.css-box-model .padding::before {
+    content: 'padding';
+}
+
+.css-box-model .content {
+    background: hsl(195.24deg 52.07% 76.27%);
+    text-transform: capitalize  ;
+}
