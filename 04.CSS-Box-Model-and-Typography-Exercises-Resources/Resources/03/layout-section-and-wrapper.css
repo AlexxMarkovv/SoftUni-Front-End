@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+    font-style: 'Roboto';
+}
+
+.site-main {
+    padding: 20px;
+    border: 2px solid green;
+}
+
+.section-wrapper {
+    border: 2px solid;
+    margin: 20px 40px;
+    padding: 20px;
+    height: 90px;
+}
+
+.inner-box {
+    border: 2px solid blue;
+    position: relative;
+    height: 72px;
+    max-width: 1200px;
+    margin: 11px auto;
+}
+
+.inner-box p {
+    text-align: left;
+    padding: 10px;
+    padding-left: 20px;
+}
+
