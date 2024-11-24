@@ -1,0 +1,23 @@
+.flex-container {
+    border: 2px solid blue;
+    display: flex;
+    width: 400px;
+    padding: 1em;
+    align-items: flex-start;
+}
+
+.flex-item {
+    border: 2px solid #000;
+    background: #eee;
+    padding: 20px;
+}
+
+.custom-order .flex-item:nth-child(3){
+    order: 1;
+}
+.custom-order .flex-item:nth-child(1){
+    order: 2;
+}
+.custom-order .flex-item:nth-child(6){
+    order: 2;
+}
