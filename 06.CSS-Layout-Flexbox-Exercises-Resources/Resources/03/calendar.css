@@ -1,0 +1,64 @@
+*,*::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(244, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 1px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3px;
+}
+
+.calendar {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin: 1px;
+    display: flex;
+}
+
+.week {
+    flex-grow: 7;
+    border-right: 1px solid lightgray;
+}
+.note {
+    flex-grow: 2;
+}
+
+.note > div {
+    border: 1px solid lightgray;
+    border-left: none;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 auto;
+    font-weight: 500;
+}
+
+.week > div {
+    border: 1px solid lightgray;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.week > div:nth-of-type(1),
+.week > div:nth-of-type(7){
+    flex: 1 1 100%;
+}
+
+.calendar section {
+    flex-wrap: wrap;
+    display: flex;
+
+}
