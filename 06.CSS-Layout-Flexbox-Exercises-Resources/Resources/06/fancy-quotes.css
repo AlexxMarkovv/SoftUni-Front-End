@@ -1,0 +1,104 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background: rgb(235, 232, 232);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quoteContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 40px auto;
+    gap: 30px;
+}
+.quoteContainer article {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 3px;
+    padding: 25px;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.leftArticle {
+    flex: 0 0 calc( 70% - 20px );
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+} 
+
+.leftArticle i {
+    font-size: 40px;
+}
+
+.author {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.rightArticle {
+    flex-grow: 1;
+}
+
+.outerCirlce {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid rgb(236, 230, 230);
+    padding: 5px 4px;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+}
+
+.innerCircle {
+    border-radius: 50%;
+    background-color: green;
+    height: 120px;
+    width: 120px;
+}
+
+.leftQuotes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 0 0 70%;
+}
+
+.rightQuotes {
+    flex: 1 0 calc( 30% - 40px );
+    flex-direction: column;
+    display: flex;
+}
+
+.rightQuotes article {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.rightQuotes .outerCirlce {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid rgb(236, 230, 230);
+    padding: 5px 4px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.rightQuotes .innerCircle {
+    border-radius: 50%;
+    background-color: green;
+    height: 60px;
+    width: 60px;
+}
