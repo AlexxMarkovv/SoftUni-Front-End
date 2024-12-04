@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px/1.5 'Lato', sans-serif;
+}
+
+.container {
+    border: 2px solid green;
+    padding: 2em;
+    gap: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container div {
+    border: 2px solid blue;
+    padding: 30px;
+}
+
+.main {
+    flex-grow: 1;
+}
