@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    background: rgb(236, 235, 235);
+    font: 16px/1.5em 'Lato', sans-serif;
+}
+
+.site {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.timeline {
+    border: 2px solid lightgray;
+    border-radius: 0.3em;
+    padding: 2em;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline::after {
+    display: block;
+    content: '';
+    height: 100%;
+    width: 2px;
+    background-color: lightgray;
+    position: absolute;
+    top: 2em;
+    left: 3.1em;
+    z-index: -1;
+}
+
+.timeline h2 {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.1);
+}
+
+.timeline .event {
+    margin-top: 2em;
+    display: flex;
+    align-items: start;
+    gap: 1em;
+}
+
+.timeline .event::before {
+    flex: 0 0 2em;
+    display: block;
+    width: 2em;
+    aspect-ratio: 1/1;
+    background: green;
+    content: '';
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.timeline .event:nth-child(even)::before {
+    background-color: darkorange;
+}
+
+.timeline .event .inner {
+    flex: 1 1 50%;
+    background: #fff;
+    color: #000;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.1);
+}
+
+@media (min-width: 800px) {
+
+    .timeline::after {
+        left: 50%;
+    }
+
+    .timeline .event {
+        min-width: 50%;
+        margin-left: calc(50% - ((2em + 4px) / 2));
+    }
+
+    .timeline .event:nth-child(odd) {
+        flex-direction: row-reverse;
+        margin-left: initial;
+        margin-right: calc(50% - ((2em + 4px) / 2));
+    }
+}
